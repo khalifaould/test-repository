@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+
+  nginx-01:
+    image: "{{ image_name }}"
+    container_name: "{{ container_name }}"
+    restart: on-failure
+    ports:
+      - "80:80"
+    
+  nginx-02:
+    image: "{{ image_name }}"
+    container_name: "{{ container_name }}"
+    restart: on-failure
+    ports:
+      - "9090:9090"
