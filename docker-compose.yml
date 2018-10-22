@@ -14,4 +14,4 @@ services:
     container_name: "nginx-container-2"
     restart: on-failure
     ports:
-      - "9090:9090"
+      - "80:9090"
